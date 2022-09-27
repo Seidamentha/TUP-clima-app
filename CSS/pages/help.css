@@ -1,0 +1,31 @@
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedorBotones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+div > input{
+    margin: 6px;
+} 
+
+#nombre, #correo, #mensaje{
+    border-radius: 6px;
+}
+
+#parrafo4{
+    background-color: #dc3545;
+    margin: 15px;
+    border-radius: 15px;
+    height: 70px;
+    width: 250px;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    padding: 25px;
+}

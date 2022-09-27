@@ -1,0 +1,7 @@
+.card{
+    text-align: center;
+    margin-top: 20px;
+    border: 2px solid grey;
+    border-radius: 15px;
+    box-shadow: 6px 4px 14px;
+}
