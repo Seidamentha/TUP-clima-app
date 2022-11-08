@@ -1,4 +1,3 @@
-
 form{
     display: flex;
     flex-direction: column;
@@ -19,22 +18,22 @@ form > p{
     border-radius: 15px;
     height: 90px;
     width: 300px;
-    color: white;
+    color: rgb(120, 108, 108);
     font-weight: 700;
     text-align: center;
 }
 
 #parrafo1{
-    background-color: #28a745;
+    background-color: #e7ece8;
     padding: 35px;
 }
 
 #parrafo2{
-    background-color: #ffc107;
+    background-color: #ff07e6;
     padding: 20px;
 }
 
 #parrafo3{
-    background-color: #dc3545;
+    background-color: #b5dc35;
     padding: 25px;
 }

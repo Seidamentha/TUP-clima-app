@@ -2,12 +2,11 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans',
-    Unicode', 'Geneva', Verdana', sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
+    Unicode', Geneva, Verdana, sans-serif;
     }
 
 :root {
-    /* Declaro variables CSS con colores principales */
     --color-theme: #00594c;
     --color-active: #5df2d6;
     --color-back-active: #04957d;
@@ -32,12 +31,29 @@ button,
     -webkit-user-select: none;
     }
 
+
+
 header {
     position: fixed;
     top: 0;
     width: 100%;
     background: var(--color-theme);
+    background-image: linear-gradient(to right, var(--color-theme), rgb(11, 164, 136));
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    border-bottom: solid 3px #5df2d6;
     }
+
+.botones{
+    background-color: var(--color-theme);
+    width: 85px;
+    height: 35px;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
 
 nav>ul {
     display: flex;
@@ -63,6 +79,8 @@ nav li.current-page a {
     color: var(--color-theme);
     background-color: var(--color-active);
     pointer-events: none;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
     }
 
 main {
@@ -72,6 +90,14 @@ main {
     padding-bottom: 60px;
     height: calc(100% - 120px);
     }
+
+
+.textos{
+    height: 35px;
+    width: 150px;
+    border-radius: 6px;
+}
+
 
 h1 {
     text-align: center;
@@ -108,6 +134,7 @@ footer {
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
+    border-top: solid 3px #5df2d6;
     }
 
 footer p {
@@ -119,7 +146,7 @@ main p {
     margin-bottom: 16px;
     }
 
-/* Media Query: Estilos a aplicar sólo en pantallas mayores a 400px */
+
  @media (min-width: 400px) {
 main {
     padding-left: 10%;
@@ -130,4 +157,27 @@ footer {
     padding-top: 20px;
     padding-bottom: 20px;
     }
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin: 200px 0 0 -25px;
+}
+
+.contenedor{
+    position: relative;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }

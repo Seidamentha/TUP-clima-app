@@ -19,12 +19,12 @@ div > input{
 }
 
 #parrafo4{
-    background-color: #dc3545;
+    background-color: #eabfc3;
     margin: 15px;
     border-radius: 15px;
     height: 70px;
     width: 250px;
-    color: white;
+    color: rgb(109, 63, 63);
     font-weight: 700;
     text-align: center;
     padding: 25px;

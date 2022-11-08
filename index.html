@@ -5,19 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clima App</title>
-    <link rel="shortcut icon" href="css/img/weather.png">
+    <link rel="shortcut icon" href="img/weather.png">
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/pages/common.css">
     <link rel="stylesheet" href="css/pages/index.css">
+    <script src="js/pages/common.js" defer></script>
+    <script src="js/pages/index.js" defer></script>
 </head>
 
 <body>
-
     <header>
 
         <h1>
-
-            <img src="css/img/cloudy-day.png" alt="weatherlogo">
+            <img src="img/cloudy-day.png" alt="weatherlogo">
             <span>Clima App</span>
         </h1>
         <nav>
@@ -28,7 +28,10 @@
             </ul>
         </nav>
     </header>
-
+    
+    <div class="contenedor">
+        <div class="loader" id="loading"></div> 
+    </div>
     <!-- Contenido principal de la página -->
     <main>
     <h2>El Clima Ahora</h2>
@@ -36,34 +39,30 @@
 <!-- Sección donde se debe colocar el formulario, con el select y el
 botón de consultar -->
             <form action="">
-                <select name="seleccionar_ciudad" id="seleccionar_ciudad">
-                    <option value="Seleccionar ciudad" selected disabled>Seleccionar ciudad</option>
-                    <option value="Rosario">Rosario</option>
-                    <option value="Rafaela">Rafaela</option>
+                <select id="select" name="seleccionar_ciudad" class="textos">
+                    <option value="Seleccionar ciudad" disabled selected>Seleccione una ciudad</option>
                 </select>
-                <input type="button" value="Consultar"   class="botones">
+                <input type="button" value="Consultar" class="botones" id="consultar">
             </form>
         </section>
         <section id="section-weather-result">
 <!-- Sección donde se debe mostrar el clima de la ciudad -->
-            <div class="card">
-                <h3>Rosario</h3>
+            <div class="card" id="card">
+                <h3 id="ciudad"></h3>
                 <img src="img/imagen1.png" alt="Soleado" height="90px" width="90px">
-                <p>Temperatura: 25.31°</p>
-                <p>Sensación térmica: 24.65°</p>
-                <p>Humedad: 29%</p>
-                <p>Velocidad del viento: 4.63km/h</p>
-                <p>Presión: 1011 P</p>
-            </div> 
+                <p id="temperatura"></p>
+                <p id="termica"></p>
+                <p id="humedad"></p>
+                <p id="viento"></p>
+                <p id="presion"></p>
+            </div>
         </section>
     </main>
 
     <footer>
     <p>
-        Desarrollado con ♥ - LC2
+        Desarrollado con ♥ - Amentha Seide
     </p>
-    <p>
-
     <p>
         <a href="https://www.flaticon.com/free-icons/cloudy" title="cloudy icons">Cloudy icons created by kosonicon - Flaticon</a>
     </p>
